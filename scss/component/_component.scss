@@ -1,0 +1,11 @@
+@forward 'rating';
+@forward 'selected';
+@use '../assets/assets' as *;
+
+.box{
+    width: 400px;
+    background-image: linear-gradient(to bottom, $dark-blue, $very-dark-blue 150%);
+    border-radius: 30px;
+    padding: 40px 32px;
+    color: $white;
+}

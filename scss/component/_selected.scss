@@ -1,0 +1,45 @@
+@use '../assets/assets' as *;
+
+
+.selected {
+    width: 100%;
+    min-height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+
+    &--active {
+        display: flex;
+        animation: selectedAnimation .3s ease both;
+
+        @keyframes selectedAnimation {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__message {
+        color: $orange;
+        background-color: rgba($color: $medium-grey, $alpha: 0.1);
+        padding: 4px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    &__title{
+        font-size: 24px;
+    }
+
+    &__text{
+        text-align: center;
+        color: $medium-grey;
+    }
+}

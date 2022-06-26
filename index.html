@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="src/style.css">
+
+    <script src="src/script.js"
+            defer></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="box">
+        <div class="rating">
+            <div class="rating__frame">
+                <img src="images/icon-star.svg"
+                     alt=""
+                     class="rating__img">
+            </div>
+            <h1 class="rating__title">How did we do?</h1>
+            <p class="rating__text">
+                Please let us know how we did with your support request. All feedback is appreciated
+                to help us improve our offering!
+
+            </p>
+            <ul class="rating__list">
+              <li class="rating__options">1</li>
+              <li class="rating__options">2</li>
+              <li class="rating__options">3</li>
+              <li class="rating__options">4</li>
+              <li class="rating__options">5</li>
+            </ul>
+            <div class="rating__error">You must select an option!</div>
+            <button class="rating__button">submit</button>
+        </div>
+        <div class="selected">
+            <div class="selected__frame">
+                <img src="images/illustration-thank-you.svg"
+                     alt=""
+                     class="selected__img">
+            </div>
+            <div class="selected__message">You selected <span class="selected__message-number"></span> out of 5</div>
+            <h2 class="selected__title">Thank you!</h2>
+            <p class="selected__text">
+                We appreciate you taking the time to give a rating. If you ever need more support,
+                don’t hesitate to get in touch!
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

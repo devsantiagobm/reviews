@@ -1,0 +1,20 @@
+@use '../assets/assets' as *;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: $very-dark-blue;
+    font-family: 'Overpass', arial;
+    font-weight: 400;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
