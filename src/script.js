@@ -12,6 +12,9 @@ function eventos() {
     list.addEventListener('click', elegirNumero);
     button.addEventListener('click', enviarNumero);
     document.addEventListener('keydown', atajos);
+    document.addEventListener('keydown', e => {
+        e.key == "Enter" ? enviarNumero() : 0;
+    })
 }
 
 // funciones
